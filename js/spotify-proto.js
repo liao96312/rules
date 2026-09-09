@@ -60,29 +60,14 @@ function processMapObj(accountAttributesMapObj){
     accountAttributesMapObj['shuffle-algorithm'] = {stringValue : 'RANDOM'};
     accountAttributesMapObj['is-thalia'] = {boolValue : true};
     accountAttributesMapObj['shuffle'] = {boolValue : false};
-    accountAttributesMapObj['is-pigeon'] = {boolValue : true};
     // 主页右下角的会员广告tab
     accountAttributesMapObj['nft-disabled'] = {stringValue : '1'};
-    accountAttributesMapObj['libspotify'] = {boolValue : true};
-    accountAttributesMapObj['high-bitrate'] = {boolValue : true};
     accountAttributesMapObj['unrestricted'] = {boolValue : true};
-    accountAttributesMapObj['catalogue'] = {stringValue : 'premium'};
-    accountAttributesMapObj['your-library-tags'] = {boolValue : true};
     accountAttributesMapObj['ads'] = {boolValue : false};
-    accountAttributesMapObj['on-demand'] = {boolValue : true};
-    accountAttributesMapObj['name'] = {stringValue : 'Spotify Premium'};
-    accountAttributesMapObj['loudness-levels'] = {stringValue : '1:-5.0,0.0,3.0:-2.0'};
-    accountAttributesMapObj['product-expiry'] = {stringValue : endDateStr};
-    accountAttributesMapObj['social-session'] = {boolValue : true};
     accountAttributesMapObj['pick-and-shuffle'] = {boolValue : false};
     accountAttributesMapObj['offline-backup'] = {stringValue : 'UNRESTRICTED'};
     accountAttributesMapObj['lyrics-offline'] = {boolValue : true};
-    // accountAttributesMapObj['financial-product'] = {stringValue : 'pr:premium,tc:0,rt:v2_US_default_epay-digital-10-USD-1m_10.0_USD_default'};
-    accountAttributesMapObj['financial-product'] = {stringValue : 'pr:premium,tc:0'};
-    accountAttributesMapObj['streaming-rules'] = {stringValue : ''};
-    accountAttributesMapObj['mixing-tools'] = {stringValue : 'EDIT'};
     accountAttributesMapObj['mobile'] = {boolValue : true};
-    accountAttributesMapObj['player-license'] = {stringValue : 'premium'};
     // 决定customize是否有效 有的用户没有此属性
     accountAttributesMapObj['com.spotify.madprops.use.ucs.product.state'] = {boolValue : true};
     accountAttributesMapObj['com.spotify.madprops.delivered.by.ucs'] = {boolValue : true};
