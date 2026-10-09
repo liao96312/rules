@@ -1,27 +1,8 @@
-let url = $request.url;
-const method = $request.method;
-console.log(`spotifyjson2-2026.03.04`);
-if (!$response.body) {
-    console.log(`$response.body为undefined:${url}`);
-    $done({});
-}
-let body = JSON.parse($response.body);
-
-if (url.includes("/device-capabilities/v1/capabilities")) {
-    console.log('capabilities');
-    body.effective_license = 'premium';
-    //body.audio_quality = 'HIFI_24';
-    if (!body.supports_hifi?.fully_supported) {
-        body.supports_hifi.fully_supported = true;
-    }
-    if (!body.supports_hifi?.user_eligible) {
-        body.supports_hifi.user_eligible = true;
-    }
-}
-
-body = JSON.stringify(body);
-$done({
-    body
-});
-
-
+/*
+ * Spotify's server response is authoritative for account licensing and device
+ * capabilities. Do not synthesize Premium or HiFi flags: inconsistent values
+ * can make the client request a playback path the account cannot use.
+ * $done({}) leaves the original response unchanged.
+ */
+console.log('spotifyjson2-safe-pass-through');
+$done({});
